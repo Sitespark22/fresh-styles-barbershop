@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fresh Styles Barbershop | Premier Barbers in Layton, UT</title>
+<meta name="description" content="Layton's premier barbershop. Sharp cuts, expert fades, beard trims. 5.0 stars, 815+ reviews on Booksy. 30+ years combined experience. Serving Layton, Davis County and Hill AFB.">
+<meta name="keywords" content="barbershop Layton Utah, barber Layton, mens haircut Layton, fades Layton, beard trim Layton, best barber Davis County">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--black:#0A0A0A;--charcoal:#141414;--charcoal-mid:#1e1e1e;--charcoal-light:#2a2a2a;--gold:#D4AF37;--red:#C8102E;--white:#fff;--grey:#888;--muted:#555;--light-grey:#ccc}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--black);color:var(--white);line-height:1.6}
+a{color:inherit;text-decoration:none}
+
+nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(10,10,10,.97);border-bottom:1px solid #1e1e1e;padding:0 5%;display:flex;align-items:center;justify-content:space-between;height:68px}
+.nav-logo{font-family:'Oswald',sans-serif;font-size:1.5rem;font-weight:700;color:var(--gold);letter-spacing:.08em;text-transform:uppercase}
+.nav-logo span{color:var(--white)}
+.nav-links{display:flex;align-items:center;gap:2rem;list-style:none}
+.nav-links a{font-size:.82rem;font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:#aaa;transition:color .2s}
+.nav-links a:hover,.nav-links a.active{color:var(--gold)}
+.nav-book{background:var(--red)!important;color:var(--white)!important;padding:.45rem 1.2rem;border-radius:4px;font-weight:700!important}
+.nav-book:hover{background:#a50d24!important}
+.hbg{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px}
+.hbg span{display:block;width:24px;height:2px;background:var(--white)}
+@media(max-width:768px){.nav-links{display:none;position:fixed;top:68px;left:0;right:0;background:var(--charcoal);flex-direction:column;padding:1.5rem 5%;gap:1.25rem;border-bottom:1px solid #2a2a2a}.nav-links.open{display:flex}.hbg{display:flex}}
+
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:120px 5% 80px;background:linear-gradient(160deg,#0a0a0a 0%,#141414 60%,#0f1a20 100%);position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 70% 50%,rgba(212,175,55,.07) 0%,transparent 60%);pointer-events:none}
+.hero-eyebrow{font-family:'Oswald',sans-serif;font-size:.75rem;font-weight:600;letter-spacing:.25em;text-transform:uppercase;color:var(--gold);margin-bottom:1.25rem;display:flex;align-items:center;gap:.75rem}
+.hero-eyebrow::before{content:'';display:inline-block;width:32px;height:2px;background:var(--gold)}
+.hero h1{font-family:'Oswald',sans-serif;font-size:clamp(3rem,7vw,5.5rem);font-weight:700;line-height:1.0;max-width:720px;margin-bottom:1.5rem}
+.hero h1 em{color:var(--gold);font-style:normal}
+.hero-sub{font-size:1.05rem;color:#999;max-width:480px;line-height:1.8;margin-bottom:2.5rem}
+.hero-ctas{display:flex;gap:1rem;flex-wrap:wrap}
+.btn{display:inline-block;padding:.85rem 2rem;font-family:'Oswald',sans-serif;font-size:.9rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;border-radius:4px;transition:all .2s;cursor:pointer;border:none}
+.btn-red{background:var(--red);color:var(--white)}
+.btn-red:hover{background:#a50d24;transform:translateY(-2px)}
+.btn-gold{background:transparent;color:var(--gold);border:2px solid var(--gold)}
+.btn-gold:hover{background:var(--gold);color:var(--black);transform:translateY(-2px)}
+.btn-outline{background:transparent;color:#aaa;border:1px solid #333}
+.btn-outline:hover{border-color:#666;color:var(--white)}
+.hero-trust{margin-top:3rem;display:flex;align-items:center;gap:.75rem}
+.hero-stars{color:var(--gold);font-size:1rem;letter-spacing:.12em}
+.hero-trust-text{font-size:.85rem;color:#666}
+.hero-trust-text strong{color:#aaa}
+.hero-trust-divider{color:#333;margin:0 .25rem}
+
+.trust-strip{background:var(--charcoal);border-top:1px solid #222;border-bottom:1px solid #222;padding:1rem 5%;display:flex;align-items:center;justify-content:center;gap:3rem;flex-wrap:wrap}
+.trust-item{display:flex;align-items:center;gap:.6rem;font-size:.82rem;color:#888}
+.trust-dot{width:6px;height:6px;border-radius:50%;background:var(--gold);flex-shrink:0}
+.trust-item strong{color:var(--light-grey)}
+
+.mil-banner{background:linear-gradient(135deg,#0a1420 0%,#0e1e2e 100%);border-left:4px solid var(--gold);padding:1.25rem 5%;display:flex;align-items:center;gap:1.25rem}
+.mil-label{font-family:'Oswald',sans-serif;font-size:.65rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);background:rgba(212,175,55,.12);padding:.3rem .75rem;border-radius:3px;white-space:nowrap;flex-shrink:0}
+.mil-text{font-size:.875rem;color:#999;line-height:1.6}
+.mil-text strong{color:var(--light-grey)}
+
+.services-section{padding:100px 5%;background:var(--black)}
+.section-label{font-family:'Oswald',sans-serif;font-size:.72rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:.75rem}
+.section-title{font-family:'Oswald',sans-serif;font-size:clamp(2rem,4vw,2.8rem);font-weight:700;line-height:1.1;margin-bottom:1rem}
+.section-sub{font-size:.95rem;color:#777;max-width:520px;line-height:1.8;margin-bottom:3rem}
+.gold-bar{display:block;width:48px;height:3px;background:var(--gold);margin-bottom:1.5rem}
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-bottom:2.5rem}
+.svc-card{background:var(--charcoal);border:1px solid #222;border-radius:6px;padding:1.75rem 1.5rem;transition:border-color .25s,transform .25s;position:relative}
+.svc-card:hover{border-color:var(--gold);transform:translateY(-3px)}
+.svc-badge{position:absolute;top:-1px;right:-1px;background:var(--gold);color:var(--black);font-family:'Oswald',sans-serif;font-size:.6rem;font-weight:700;letter-spacing:.12em;padding:.25rem .6rem;border-radius:0 5px 0 5px}
+.svc-number{font-family:'Oswald',sans-serif;font-size:.75rem;color:var(--gold);font-weight:700;letter-spacing:.1em;margin-bottom:.75rem;opacity:.7}
+.svc-name{font-family:'Oswald',sans-serif;font-size:1.1rem;font-weight:600;margin-bottom:.5rem;color:var(--white)}
+.svc-desc{font-size:.85rem;color:#777;line-height:1.65;margin-bottom:.85rem}
+.svc-price{font-family:'Oswald',sans-serif;font-size:.85rem;color:var(--gold);font-weight:600}
+@media(max-width:768px){.services-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:480px){.services-grid{grid-template-columns:1fr}}
+
+.reviews-section{padding:100px 5%;background:var(--charcoal)}
+.reviews-header{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:3rem;flex-wrap:wrap;gap:1.5rem}
+.reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.review-card{background:var(--charcoal-mid);border:1px solid #2a2a2a;border-radius:6px;padding:1.5rem;border-top:2px solid var(--gold)}
+.review-stars{color:var(--gold);font-size:.85rem;letter-spacing:.1em;margin-bottom:.85rem}
+.review-text{font-size:.875rem;color:#aaa;line-height:1.75;font-style:italic;margin-bottom:1rem}
+.review-author{font-size:.75rem;color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:.08em}
+.reviews-footer{text-align:center;margin-top:2.5rem;padding-top:2.5rem;border-top:1px solid #222}
+.reviews-footer p{font-size:.875rem;color:#555;margin-bottom:1.25rem}
+@media(max-width:768px){.reviews-grid{grid-template-columns:1fr}}
+
+.info-strip{padding:70px 5%;background:var(--black);border-top:1px solid #1a1a1a}
+.info-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:2.5rem}
+.info-block h3{font-family:'Oswald',sans-serif;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:.85rem}
+.info-block p,.info-block a{font-size:.9rem;color:#777;line-height:1.9}
+.info-block a{transition:color .2s}
+.info-block a:hover{color:var(--gold)}
+.info-block strong{color:#aaa;font-weight:500}
+@media(max-width:600px){.info-grid{grid-template-columns:1fr}}
+
+footer{background:var(--charcoal);border-top:1px solid #1e1e1e;padding:56px 5% 28px}
+.footer-inner{display:grid;grid-template-columns:2fr 1fr 1fr;gap:3rem;margin-bottom:2.5rem}
+.footer-logo{font-family:'Oswald',sans-serif;font-size:1.3rem;font-weight:700;color:var(--gold);letter-spacing:.08em;margin-bottom:.75rem}
+.footer-tagline{font-size:.85rem;color:#555;line-height:1.7;max-width:260px}
+.footer-col h4{font-family:'Oswald',sans-serif;font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:.85rem}
+.footer-col ul{list-style:none}
+.footer-col ul li{margin-bottom:.5rem}
+.footer-col ul li a,.footer-col p{color:#555;font-size:.85rem;line-height:1.7}
+.footer-col ul li a:hover{color:var(--gold)}
+.footer-bottom{border-top:1px solid #1a1a1a;padding-top:1.25rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem}
+.footer-bottom p{color:#333;font-size:.78rem}
+@media(max-width:640px){.footer-inner{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo">Fresh<span>Styles</span></div>
+  <button class="hbg" id="hbg" aria-label="Menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="/" class="active">Home</a></li>
+    <li><a href="/services">Services</a></li>
+    <li><a href="/gallery">Gallery</a></li>
+    <li><a href="/barbers">Our Barbers</a></li>
+    <li><a href="/contact">Contact</a></li>
+    <li><a href="https://booksy.com/en-us/531714_fresh-styles-barbershop_barber-shop_37712_layton" target="_blank" rel="noopener" class="nav-book">Book Now</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-eyebrow">Layton, Utah</div>
+  <h1>Layton's <em>Premier</em><br>Barbershop.</h1>
+  <p class="hero-sub">Sharp cuts. Expert fades. 30+ years of combined experience. Serving Layton, Davis County &amp; Hill Air Force Base.</p>
+  <div class="hero-ctas">
+    <a href="https://booksy.com/en-us/531714_fresh-styles-barbershop_barber-shop_37712_layton" target="_blank" rel="noopener" class="btn btn-red">Book Now</a>
+    <a href="/barbers" class="btn btn-gold">Meet Our Barbers</a>
+  </div>
+  <div class="hero-trust">
+    <span class="hero-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+    <span class="hero-trust-text hero-trust-divider">&nbsp;</span>
+    <span class="hero-trust-text"><strong>5.0 on Booksy</strong> &nbsp;&middot;&nbsp; 815+ Reviews</span>
+  </div>
+</section>
+
+<!-- TRUST STRIP -->
+<div class="trust-strip">
+  <div class="trust-item"><span class="trust-dot"></span><span><strong>30+</strong> Years Combined Experience</span></div>
+  <div class="trust-item"><span class="trust-dot"></span><span><strong>5.0 Stars</strong> &middot; 815+ Verified Reviews</span></div>
+  <div class="trust-item"><span class="trust-dot"></span><span>Layton, UT &mdash; Davis County &amp; Hill AFB</span></div>
+  <div class="trust-item"><span class="trust-dot"></span><span>Walk-Ins Welcome</span></div>
+</div>
+
+<!-- MILITARY BANNER -->
+<div class="mil-banner">
+  <span class="mil-label">Military Pricing</span>
+  <p class="mil-text"><strong>Military Appreciation Pricing Available.</strong> Proudly serving active duty, veterans &amp; reserves at Hill Air Force Base. Show your ID at time of service.</p>
+</div>
+
+<!-- SERVICES TEASER -->
+<section class="services-section">
+  <div class="section-label">What We Offer</div>
+  <span class="gold-bar"></span>
+  <h2 class="section-title">Sharp Services.<br>Expert Hands.</h2>
+  <p class="section-sub">Every cut delivered by licensed barbers who take pride in the craft. Book in minutes — no waiting.</p>
+  <div class="services-grid">
+    <div class="svc-card">
+      <span class="svc-badge">Most Popular</span>
+      <div class="svc-number">01</div>
+      <div class="svc-name">Fade Haircut</div>
+      <p class="svc-desc">Low, mid, or high fade with skin-tight blend. Precision line-up included. The signature Fresh Styles finish.</p>
+      <div class="svc-price">Starting at $35</div>
+    </div>
+    <div class="svc-card">
+      <div class="svc-number">02</div>
+      <div class="svc-name">Classic Haircut</div>
+      <p class="svc-desc">Timeless taper and scissor cut with detailed styling. Clean every single time.</p>
+      <div class="svc-price">Starting at $30</div>
+    </div>
+    <div class="svc-card">
+      <div class="svc-number">03</div>
+      <div class="svc-name">Beard Trim &amp; Shape</div>
+      <p class="svc-desc">Hot towel prep, precision shaping, and edge-up to define your jawline and neckline.</p>
+      <div class="svc-price">Starting at $20</div>
+    </div>
+    <div class="svc-card">
+      <div class="svc-number">04</div>
+      <div class="svc-name">Cut + Beard Combo</div>
+      <p class="svc-desc">Full haircut paired with a complete beard trim and shape. Walk out looking polished.</p>
+      <div class="svc-price">Starting at $50</div>
+    </div>
+    <div class="svc-card">
+      <div class="svc-number">05</div>
+      <div class="svc-name">Designs &amp; Artwork</div>
+      <p class="svc-desc">Custom razor designs and scalp artwork added to any cut. From subtle lines to detailed patterns.</p>
+      <div class="svc-price">Add-on &mdash; confirm at booking</div>
+    </div>
+    <div class="svc-card">
+      <div class="svc-number">06</div>
+      <div class="svc-name">Straight Razor Shave</div>
+      <p class="svc-desc">Classic hot-towel straight razor shave. The full traditional experience, delivered with precision.</p>
+      <div class="svc-price">Confirm pricing at booking</div>
+    </div>
+  </div>
+  <div style="text-align:center">
+    <a href="/services" class="btn btn-gold">View All Services &rarr;</a>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews-section">
+  <div class="reviews-header">
+    <div>
+      <div class="section-label">Social Proof</div>
+      <h2 class="section-title">815+ Five-Star Reviews</h2>
+    </div>
+    <a href="https://booksy.com/en-us/531714_fresh-styles-barbershop_barber-shop_37712_layton" target="_blank" rel="noopener" class="btn btn-outline">All Reviews on Booksy &rarr;</a>
+  </div>
+  <div class="reviews-grid">
+    <div class="review-card">
+      <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <p class="review-text">"Best barbershop in Davis County, hands down. Kevin always delivers a perfect fade every single time. Been coming here for years and won't go anywhere else."</p>
+      <div class="review-author">Verified Booksy Review</div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <p class="review-text">"Military pricing is a huge plus being stationed at Hill AFB. The cuts are clean, the barbers are skilled, and the shop feels premium without the premium price tag."</p>
+      <div class="review-author">Verified Booksy Review</div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <p class="review-text">"Juan does phenomenal beard work. Walked in looking rough, walked out sharp. These guys know exactly what they're doing — the experience shows."</p>
+      <div class="review-author">Verified Booksy Review</div>
+    </div>
+  </div>
+  <div class="reviews-footer">
+    <p>5.0 stars across 815+ verified reviews on Booksy</p>
+    <a href="https://booksy.com/en-us/531714_fresh-styles-barbershop_barber-shop_37712_layton" target="_blank" rel="noopener" class="btn btn-gold">Book Your Appointment</a>
+  </div>
+</section>
+
+<!-- INFO -->
+<section class="info-strip">
+  <div class="info-grid">
+    <div class="info-block">
+      <h3>Hours</h3>
+      <p>Mon &ndash; Sat &nbsp; 10:00 AM &ndash; 6:00 PM<br>Sunday &nbsp; Closed<br><span style="font-size:.8rem;color:#444">Hours may vary &mdash; confirm at booking</span></p>
+    </div>
+    <div class="info-block">
+      <h3>Location</h3>
+      <p>2704 N Hill Field Rd, Suite 4<br>Layton, UT 84041<br><a href="https://maps.google.com/?q=2704+N+Hill+Field+Rd+Suite+4+Layton+UT+84041" target="_blank" rel="noopener">Get Directions &rarr;</a></p>
+    </div>
+    <div class="info-block">
+      <h3>Contact</h3>
+      <p><a href="tel:3853938418">(385) 393-8418</a><br><a href="mailto:freshstyleslayton@gmail.com">freshstyleslayton@gmail.com</a><br><a href="https://instagram.com/freshstyles.ut" target="_blank" rel="noopener">@freshstyles.ut</a></p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-logo">FreshStyles</div>
+      <p class="footer-tagline">Layton's premier barbershop. Sharp cuts, expert fades, 30+ years of combined experience. Serving Davis County &amp; Hill AFB.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navigate</h4>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/services">Services</a></li>
+        <li><a href="/gallery">Gallery</a></li>
+        <li><a href="/barbers">Our Barbers</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Book</h4>
+      <ul>
+        <li><a href="https://booksy.com/en-us/531714_fresh-styles-barbershop_barber-shop_37712_layton" target="_blank" rel="noopener">Book on Booksy</a></li>
+        <li><a href="https://instagram.com/freshstyles.ut" target="_blank" rel="noopener">Instagram</a></li>
+      </ul>
+      <p style="margin-top:.85rem">&#9733;&#9733;&#9733;&#9733;&#9733; 5.0 &middot; 815+ Reviews</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Fresh Styles Barbershop LLC &middot; Layton, Utah</p>
+    <p>2704 N Hill Field Rd, Suite 4, Layton, UT 84041</p>
+  </div>
+</footer>
+
+<script>
+const hbg=document.getElementById('hbg');
+const nl=document.getElementById('nav-links');
+hbg.addEventListener('click',()=>{nl.classList.toggle('open');hbg.setAttribute('aria-expanded',nl.classList.contains('open'));});
+</script>
+</body>
+</html>
