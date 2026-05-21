@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Services | Fresh Styles Barbershop | Layton, UT</title>
+<meta name="description" content="Full service menu at Fresh Styles Barbershop in Layton, UT. Fades, tapers, beard trims, straight razor shaves, kids cuts, hair color, and more. Military pricing available.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--black:#0A0A0A;--charcoal:#141414;--charcoal-mid:#1e1e1e;--charcoal-light:#2a2a2a;--gold:#D4AF37;--red:#C8102E;--white:#fff;--grey:#888;--muted:#555;--light-grey:#ccc}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}body{font-family:'Inter',sans-serif;background:var(--black);color:var(--white);line-height:1.6}a{color:inherit;text-decoration:none}
+nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(10,10,10,.97);border-bottom:1px solid #1e1e1e;padding:0 5%;display:flex;align-items:center;justify-content:space-between;height:68px}
+.nav-logo{font-family:'Oswald',sans-serif;font-size:1.5rem;font-weight:700;color:var(--gold);letter-spacing:.08em;text-transform:uppercase}
+.nav-logo span{color:var(--white)}
+.nav-links{display:flex;align-items:center;gap:2rem;list-style:none}
+.nav-links a{font-size:.82rem;font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:#aaa;transition:color .2s}
+.nav-links a:hover,.nav-links a.active{color:var(--gold)}
+.nav-book{background:var(--red)!important;color:var(--white)!important;padding:.45rem 1.2rem;border-radius:4px;font-weight:700!important}
+.nav-book:hover{background:#a50d24!important}
+.hbg{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px}
+.hbg span{display:block;width:24px;height:2px;background:var(--white)}
+@media(max-width:768px){.nav-links{display:none;position:fixed;top:68px;left:0;right:0;background:var(--charcoal);flex-direction:column;padding:1.5rem 5%;gap:1.25rem;border-bottom:1px solid #2a2a2a}.nav-links.open{display:flex}.hbg{display:flex}}
+.btn{display:inline-block;padding:.85rem 2rem;font-family:'Oswald',sans-serif;font-size:.9rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;border-radius:4px;transition:all .2s;cursor:pointer;border:none}
+.btn-red{background:var(--red);color:var(--white)}.btn-red:hover{background:#a50d24;transform:translateY(-2px)}
+.btn-gold{background:transparent;color:var(--gold);border:2px solid var(--gold)}.btn-gold:hover{background:var(--gold);color:var(--black);transform:translateY(-2px)}
+.page-header{padding:130px 5% 70px;background:linear-gradient(160deg,#0a0a0a 0%,#141414 100%);border-bottom:1px solid #1a1a1a}
+.page-header .section-label{font-family:'Oswald',sans-serif;font-size:.72rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:.75rem}
+.page-header h1{font-family:'Oswald',sans-serif;font-size:clamp(2.5rem,5vw,4rem);font-weight:700;line-height:1.1;margin-bottom:1rem}
+.page-header p{font-size:1rem;color:#777;max-width:520px;line-height:1.8}
+.gold-bar{display:block;width:48px;height:3px;background:var(--gold);margin:1rem 0 0}
+.mil-banner{background:linear-gradient(135deg,#0a1420 0%,#0e1e2e 100%);border-left:4px solid var(--gold);padding:1.25rem 5%;display:flex;align-items:center;gap:1.25rem}
+.mil-label{font-family:'Oswald',sans-serif;font-size:.65rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);background:rgba(212,175,55,.12);padding:.3rem .75rem;border-radius:3px;white-space:nowrap;flex-shrink:0}
+.mil-text{font-size:.875rem;color:#999;line-height:1.6}
+.mil-text strong{color:var(--light-grey)}
+.services-body{padding:80px 5%;background:var(--black)}
+.svc-category{margin-bottom:3.5rem}
+.cat-header{display:flex;align-items:center;gap:1rem;margin-bottom:1.75rem;padding-bottom:1rem;border-bottom:1px solid #1e1e1e}
+.cat-header h2{font-family:'Oswald',sans-serif;font-size:1.4rem;font-weight:700;letter-spacing:.04em}
+.cat-label{font-family:'Oswald',sans-serif;font-size:.65rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);background:rgba(212,175,55,.1);padding:.25rem .6rem;border-radius:3px}
+.svc-list{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem}
+.svc-row{background:var(--charcoal);border:1px solid #222;border-radius:6px;padding:1.5rem;display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;transition:border-color .2s}
+.svc-row:hover{border-color:var(--gold)}
+.svc-row-info{flex:1}
+.svc-row-name{font-family:'Oswald',sans-serif;font-size:1rem;font-weight:600;margin-bottom:.4rem}
+.svc-row-desc{font-size:.84rem;color:#777;line-height:1.65}
+.svc-row-price{font-family:'Oswald',sans-serif;font-size:.9rem;color:var(--gold);font-weight:700;white-space:nowrap;padding-top:.15rem}
+@media(max-width:640px){.svc-list{grid-template-columns:1fr}.svc-row{flex-direction:column}}
+.addon-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.addon-card{background:var(--charcoal);border:1px solid #222;border-radius:6px;padding:1.25rem;display:flex;justify-content:space-between;align-items:center}
+.addon-name{font-size:.9rem;color:var(--light-grey)}
+.addon-price{font-family:'Oswald',sans-serif;font-size:.9rem;color:var(--gold);font-weight:700}
+@media(max-width:640px){.addon-grid{grid-template-columns:1fr 1fr}}
+.booking-cta{background:var(--charcoal);border-top:1px solid #1e1e1e;padding:80px 5%;text-align:center}
+.booking-cta h2{font-family:'Oswald',sans-serif;font-size:2.2rem;font-weight:700;margin-bottom:1rem}
+.booking-cta p{font-size:.95rem;color:#777;max-width:480px;margin:0 auto 2rem;line-height:1.8}
+.booking-cta-btns{display:flex;justify-content:center;gap:1rem;flex-wrap:wrap}
+footer{background:var(--charcoal);border-top:1px solid #1e1e1e;padding:48px 5% 24px}
+.footer-inner{display:grid;grid-template-columns:2fr 1fr 1fr;gap:3rem;margin-bottom:2.5rem}
+.footer-logo{font-family:'Oswald',sans-serif;font-size:1.3rem;font-weight:700;color:var(--gold);letter-spacing:.08em;margin-bottom:.75rem}
+.footer-tagline{font-size:.85rem;color:#555;line-height:1.7;max-width:260px}
+.footer-col h4{font-family:'Oswald',sans-serif;font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:.85rem}
+.footer-col ul{list-style:none}
+.footer-col ul li{margin-bottom:.5rem}
+.footer-col ul li a,.footer-col p{color:#555;font-size:.85rem;line-height:1.7}
+.footer-col ul li a:hover{color:var(--gold)}
+.footer-bottom{border-top:1px solid #1a1a1a;padding-top:1.25rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem}
+.footer-bottom p{color:#333;font-size:.78rem}
+@media(max-width:640px){.footer-inner{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo">Fresh<span>Styles</span></div>
+  <button class="hbg" id="hbg" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="/">Home</a></li>
+    <li><a href="/services" class="active">Services</a></li>
+    <li><a href="/gallery">Gallery</a></li>
+    <li><a href="/barbers">Our Barbers</a></li>
+    <li><a href="/contact">Contact</a></li>
+    <li><a href="https://booksy.com/en-us/531714_fresh-styles-barbershop_barber-shop_37712_layton" target="_blank" rel="noopener" class="nav-book">Book Now</a></li>
+  </ul>
+</nav>
+
+<div class="page-header">
+  <div class="section-label">Menu</div>
+  <h1>Sharp Services.<br>Expert Hands.</h1>
+  <p>Premium cuts and grooming delivered by licensed barbers with 30+ years of combined experience.</p>
+  <span class="gold-bar"></span>
+</div>
+
+<div class="mil-banner">
+  <span class="mil-label">Military Pricing</span>
+  <p class="mil-text"><strong>Military Appreciation Pricing Available.</strong> Active duty, veterans &amp; reserves receive appreciation pricing on all services. Show your ID at time of service &mdash; Proudly serving Hill Air Force Base.</p>
+</div>
+
+<div class="services-body">
+
+  <div class="svc-category">
+    <div class="cat-header">
+      <h2>Haircuts</h2>
+      <span class="cat-label">Core Services</span>
+    </div>
+    <div class="svc-list">
+      <div class="svc-row">
+        <div class="svc-row-info">
+          <div class="svc-row-name">Fade Haircut</div>
+          <p class="svc-row-desc">Low, mid, or high fade with skin-tight blend. Precision line-up included. The signature Fresh Styles finish.</p>
+        </div>
+        <div class="svc-row-price">From $35</div>
+      </div>
+      <div class="svc-row">
+        <div class="svc-row-info">
+          <div class="svc-row-name">Classic Haircut</div>
+          <p class="svc-row-desc">Timeless taper and scissor cut with detailed styling. Clean and professional every time.</p>
+        </div>
+        <div class="svc-row-price">From $30</div>
+      </div>
+      <div class="svc-row">
+        <div class="svc-row-info">
+          <div class="svc-row-name">Line-Up / Edge-Up</div>
+          <p class="svc-row-desc">Crisp hairline, temple, and neckline detailing. Quick, sharp, and precise.</p>
+        </div>
+        <div class="svc-row-price">From $15</div>
+      </div>
+      <div class="svc-row">
+        <div class="svc-row-info">
+          <div class="svc-row-name">Fades &amp; Tapers</div>
+          <p class="svc-row-desc">All fade styles from skin to mid to high. Clean transitions and sharp blends throughout.</p>
+        </div>
+        <div class="svc-row-price">From $35</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="svc-category">
+    <div class="cat-header">
+      <h2>Beard Services</h2>
+    </div>
+    <div class="svc-list">
+      <div class="svc-row">
+        <div class="svc-row-info">
+          <div class="svc-row-name">Beard Trim &amp; Shape</div>
+          <p class="svc-row-desc">Hot towel prep, precision shaping, and edge-up to define your jawline and neckline sharply.</p>
+        </div>
+        <div class="svc-row-price">From $20</div>
+      </div>
+      <div class="svc-row">
+        <div class="svc-row-info">
+          <div class="svc-row-name">Cut + Beard Combo</div>
+          <p class="svc-row-desc">Full haircut paired with a complete beard trim and shape. The full package &mdash; walk out polished.</p>
+        </div>
+        <div class="svc-row-price">From $50</div>
+      </div>
+      <div class="svc-row">
+        <div class="svc-row-info">
+          <div class="svc-row-name">Straight Razor Shave</div>
+          <p class="svc-row-desc">Classic hot-towel straight razor shave. Precision at its most traditional. Full facial shave.</p>
+        </div>
+        <div class="svc-row-price">Confirm at booking</div>
+      </div>
+      <div class="svc-row">
+        <div class="svc-row-info">
+          <div class="svc-row-name">Beard Lineup</div>
+          <p class="svc-row-desc">Sharp neckline and cheek line definition. Quick, precise, and clean every time.</p>
+        </div>
+        <div class="svc-row-price">Confirm at booking</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="svc-category">
+    <div class="cat-header">
+      <h2>Specialty &amp; Add-Ons</h2>
+    </div>
+    <div class="svc-list">
+      <div class="svc-row">
+        <div class="svc-row-info">
+          <div class="svc-row-name">Designs &amp; Clipper Art</div>
+          <p class="svc-row-desc">Custom razor designs and scalp artwork added to any cut. From subtle logo lines to detailed patterns.</p>
+        </div>
+        <div class="svc-row-price">Add-on pricing</div>
+      </div>
+      <div class="svc-row">
+        <div class="svc-row-info">
+          <div class="svc-row-name">Hair Color</div>
+          <p class="svc-row-desc">Color services available. Confirm specific options and pricing directly at booking.</p>
+        </div>
+        <div class="svc-row-price">Confirm at booking</div>
+      </div>
+      <div class="svc-row">
+        <div class="svc-row-info">
+          <div class="svc-row-name">Eyebrow Shaping</div>
+          <p class="svc-row-desc">Clean, defined brow shaping to complete your look. Precision trim and edge.</p>
+        </div>
+        <div class="svc-row-price">Confirm at booking</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="svc-category">
+    <div class="cat-header">
+      <h2>Kids &amp; Seniors</h2>
+    </div>
+    <div class="svc-list">
+      <div class="svc-row">
+        <div class="svc-row-info">
+          <div class="svc-row-name">Kids Cut (12 &amp; Under)</div>
+          <p class="svc-row-desc">Patient, skilled cuts for the young ones. Same precision standards &mdash; sized right for the next generation.</p>
+        </div>
+        <div class="svc-row-price">From $25</div>
+      </div>
+      <div class="svc-row">
+        <div class="svc-row-info">
+          <div class="svc-row-name">Senior Cut</div>
+          <p class="svc-row-desc">Respectful, relaxed service for seniors. Clean classic cuts with no rush and a great result.</p>
+        </div>
+        <div class="svc-row-price">From $25</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="svc-category">
+    <div class="cat-header">
+      <h2>Military Appreciation</h2>
+      <span class="cat-label">Active Duty &middot; Veterans &middot; Reserves</span>
+    </div>
+    <div style="background:linear-gradient(135deg,#0a1420 0%,#0e1e2e 100%);border:1px solid #1e3a5a;border-radius:6px;padding:2rem">
+      <p style="font-size:.95rem;color:#aaa;line-height:1.8;margin-bottom:.75rem">Active duty, veterans, and reserves receive appreciation pricing on all services. Fresh Styles proudly serves the Hill Air Force Base community and all military personnel in the Layton &amp; Davis County area.</p>
+      <p style="font-size:.85rem;color:#666"><strong style="color:var(--gold)">How it works:</strong> Simply show your military ID at time of service. No pre-registration required. Discount applies to all standard services.</p>
+    </div>
+  </div>
+
+  <p style="font-size:.8rem;color:#444;margin-top:1rem;text-align:center">All prices are starting rates. Confirm exact pricing at time of booking. Prices may vary by barber and service complexity.</p>
+</div>
+
+<div class="booking-cta">
+  <h2>Ready to Book?</h2>
+  <p>Over 815 five-star reviews. Licensed barbers. Walk in confident &mdash; walk out sharp.</p>
+  <div class="booking-cta-btns">
+    <a href="https://booksy.com/en-us/531714_fresh-styles-barbershop_barber-shop_37712_layton" target="_blank" rel="noopener" class="btn btn-red">Book Now on Booksy</a>
+    <a href="/barbers" class="btn btn-gold">Choose Your Barber &rarr;</a>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-logo">FreshStyles</div>
+      <p class="footer-tagline">Layton's premier barbershop. Sharp cuts, expert fades, 30+ years of combined experience.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navigate</h4>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/services">Services</a></li>
+        <li><a href="/gallery">Gallery</a></li>
+        <li><a href="/barbers">Our Barbers</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Book</h4>
+      <ul>
+        <li><a href="https://booksy.com/en-us/531714_fresh-styles-barbershop_barber-shop_37712_layton" target="_blank" rel="noopener">Book on Booksy</a></li>
+        <li><a href="https://instagram.com/freshstyles.ut" target="_blank" rel="noopener">Instagram</a></li>
+      </ul>
+      <p style="margin-top:.85rem">&#9733;&#9733;&#9733;&#9733;&#9733; 5.0 &middot; 815+ Reviews</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Fresh Styles Barbershop LLC &middot; Layton, Utah</p>
+    <p>2704 N Hill Field Rd, Suite 4, Layton, UT 84041</p>
+  </div>
+</footer>
+<script>
+const hbg=document.getElementById('hbg');const nl=document.getElementById('nav-links');
+hbg.addEventListener('click',()=>{nl.classList.toggle('open');hbg.setAttribute('aria-expanded',nl.classList.contains('open'));});
+</script>
+</body>
+</html>
